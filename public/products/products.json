@@ -1,0 +1,164 @@
+{
+  "categories": [
+    {
+      "id": "figure",
+      "name": "Figure",
+      "description": "Scale figure PVC cao cấp, chi tiết sơn tay.",
+      "image": "anime-figurine-closeup.jpg"
+    },
+    {
+      "id": "anime",
+      "name": "Anime",
+      "description": "Nhân vật anime, trưng bày bàn làm việc và tủ kính.",
+      "image": "anime-convention-figures.jpg"
+    },
+    {
+      "id": "gundam",
+      "name": "Gundam",
+      "description": "Gunpla và mô hình mecha Bandai các cấp độ.",
+      "image": "gundam-rx78.jpg"
+    },
+    {
+      "id": "nendoroid",
+      "name": "Nendoroid",
+      "description": "Figure chibi thay mặt, nhiều phụ kiện.",
+      "image": "nendoroid-kirishima.jpg"
+    },
+    {
+      "id": "collectible",
+      "name": "Collectible",
+      "description": "Đồ sưu tầm vinyl, action figure và vật phẩm hiếm.",
+      "image": "funko-pops.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": "fig-001",
+      "name": "Scale Figure Blue Whisper",
+      "price": 1890000,
+      "category": "figure",
+      "image": "anime-blue-hair.jpg",
+      "description": "Figure PVC 1/7 với tóc xanh và dáng đứng tự nhiên, phù hợp tủ trưng bày."
+    },
+    {
+      "id": "fig-002",
+      "name": "Close-up Battle Pose Figure",
+      "price": 2150000,
+      "category": "figure",
+      "image": "anime-figurine-closeup.jpg",
+      "description": "Figure tư thế chiến đấu, sơn chi tiết mắt và trang phục."
+    },
+    {
+      "id": "fig-003",
+      "name": "Epitanime Display Set",
+      "price": 990000,
+      "category": "figure",
+      "image": "epitanime-figurines.jpg",
+      "description": "Bộ figure trưng bày phong cách convention, nhiều nhân vật."
+    },
+    {
+      "id": "ani-001",
+      "name": "Convention Table Collection",
+      "price": 1450000,
+      "category": "anime",
+      "image": "anime-convention-figures.jpg",
+      "description": "Bộ sưu tập nhân vật anime đầy màu sắc từ bàn trưng bày sự kiện."
+    },
+    {
+      "id": "ani-002",
+      "name": "Warm Shelf Anime Lineup",
+      "price": 1280000,
+      "category": "anime",
+      "image": "anime-shelf-figures.jpg",
+      "description": "Dãy figure anime trên kệ ấm ánh đèn, kèm maneki-neko."
+    },
+    {
+      "id": "ani-003",
+      "name": "Akihabara Street Catch",
+      "price": 860000,
+      "category": "anime",
+      "image": "akihabara-figures.jpg",
+      "description": "Lấy cảm hứng từ cửa hàng Akihabara — lựa chọn anime phổ biến."
+    },
+    {
+      "id": "ani-004",
+      "name": "Dragon Ball Action Toy",
+      "price": 520000,
+      "category": "anime",
+      "image": "dragonball-toy.jpg",
+      "description": "Action toy phong cách Dragon Ball, cứng cáp và dễ pose."
+    },
+    {
+      "id": "gun-001",
+      "name": "RX-78-2 Gundam Built Model",
+      "price": 1750000,
+      "category": "gundam",
+      "image": "gundam-rx78.jpg",
+      "description": "Mô hình RX-78-2 đã lắp, tư thế đứng bảo tàng."
+    },
+    {
+      "id": "gun-002",
+      "name": "Odaiba Gundam Display",
+      "price": 1320000,
+      "category": "gundam",
+      "image": "gundam-odaiba.jpg",
+      "description": "Mô hình mecha cảm hứng từ tượng Gundam Odaiba."
+    },
+    {
+      "id": "gun-003",
+      "name": "HG Gunpla Boxed Kit",
+      "price": 690000,
+      "category": "gundam",
+      "image": "gunpla-packed.jpg",
+      "description": "Hộp Gunpla còn nguyên seal, phù hợp người mới lắp."
+    },
+    {
+      "id": "gun-004",
+      "name": "Gunpla Runner Bundle",
+      "price": 450000,
+      "category": "gundam",
+      "image": "gunpla-sprues.jpg",
+      "description": "Bộ runner nhựa Gunpla để tự lắp và sơn."
+    },
+    {
+      "id": "gun-005",
+      "name": "Shanghai Gundam Replica",
+      "price": 980000,
+      "category": "gundam",
+      "image": "gundam-shanghai.jpg",
+      "description": "Replica lấy cảm hứng từ tượng Gundam Thượng Hải."
+    },
+    {
+      "id": "nen-001",
+      "name": "Nendoroid Kirishima",
+      "price": 890000,
+      "category": "nendoroid",
+      "image": "nendoroid-kirishima.jpg",
+      "description": "Nendoroid KanColle Kirishima kèm mặt thay và phụ kiện."
+    },
+    {
+      "id": "nen-002",
+      "name": "Nendoroid Mirai Suenaga",
+      "price": 750000,
+      "category": "nendoroid",
+      "image": "nendoroid-mirai.jpg",
+      "description": "Nendoroid Mirai Suenaga — chibi dễ thương, sơn sạch."
+    },
+    {
+      "id": "nen-003",
+      "name": "Nendoroid Natsumi Koshigaya",
+      "price": 820000,
+      "category": "nendoroid",
+      "image": "nendoroid-natsumi.jpg",
+      "description": "Nendoroid Non Non Biyori Natsumi, hộp phụ kiện đầy đủ."
+    },
+    {
+      "id": "col-001",
+      "name": "Vinyl Pop Shelf Lot",
+      "price": 640000,
+      "category": "collectible",
+      "image": "funko-pops.jpg",
+      "description": "Lô vinyl head collectible nhiều nhân vật trên kệ cửa hàng."
+    }
+  ]
+}
