@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ProductCard } from "@/components/product-card";
+import { ProductBrowser } from "@/components/product-browser";
 import { getCategories, getCategory, getProducts } from "@/lib/products";
 
 type Props = {
@@ -14,36 +14,30 @@ export async function generateStaticParams() {
 
 export default async function CategoryPage({ params }: Props) {
   const { category: categoryId } = await params;
-  const category = await getCategory(categoryId);
+  const [category, categories, products] = await Promise.all([
+    getCategory(categoryId),
+    getCategories(),
+    getProducts(categoryId),
+  ]);
   if (!category) notFound();
-
-  const products = await getProducts(categoryId);
 
   return (
     <div className="page">
       <section className="section" style={{ paddingTop: "1rem" }}>
         <div className="section__head">
           <p className="section__eyebrow">
-            <Link href="/figures">Figure</Link> / {category.name}
+            <Link href="/figures">Tất cả</Link> / {category.name}
           </p>
           <h1 className="section__title">{category.name}</h1>
           <p className="section__desc">{category.description}</p>
         </div>
 
-        {products.length === 0 ? (
-          <p className="empty-state">Chưa có sản phẩm trong thể loại này.</p>
-        ) : (
-          <div className="product-grid">
-            {products.map((product, index) => (
-              <div
-                key={product.id}
-                style={{ animationDelay: `${index * 45}ms` }}
-              >
-                <ProductCard product={product} />
-              </div>
-            ))}
-          </div>
-        )}
+        <ProductBrowser
+          products={products}
+          categories={categories}
+          lockedCategory={category.id}
+          showCategoryFilter={false}
+        />
       </section>
     </div>
   );

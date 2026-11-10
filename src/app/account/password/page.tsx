@@ -33,9 +33,7 @@ export default function PasswordPage() {
   return (
     <form className="panel form-stack" onSubmit={onSubmit}>
       <h1 className="panel__title">Đổi / reset mật khẩu</h1>
-      <p className="muted">
-        Vì không có backend, mật khẩu chỉ được kiểm tra và lưu trên trình duyệt.
-      </p>
+      <p className="muted">Nhập mật khẩu hiện tại và mật khẩu mới để cập nhật.</p>
       <div className="field">
         <label htmlFor="current">Mật khẩu hiện tại</label>
         <input

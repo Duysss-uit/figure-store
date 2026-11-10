@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Syne } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { ShopProvider } from "@/context/shop-context";
+import { getCategories } from "@/lib/products";
 import "./globals.css";
 
 const syne = Syne({
@@ -19,10 +20,12 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Figora — Cửa hàng figure & Gunpla",
   description:
-    "Figora bán figure, anime, Gundam, Nendoroid và đồ sưu tầm. Frontend Next.js, dữ liệu sản phẩm từ JSON.",
+    "Figora bán figure, anime, Gundam, Nendoroid và đồ sưu tầm.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  const categories = await getCategories();
+
   return (
     <html
       lang="vi"
@@ -30,12 +33,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <ShopProvider>
-          <Navbar />
+          <Navbar categories={categories} />
           <main className="flex-1">{children}</main>
           <footer className="site-footer">
             <div className="site-footer__inner">
-              <span>Figora — cửa hàng figure frontend</span>
-              <span>Dữ liệu sản phẩm đọc từ /public/products</span>
+              <span>Figora</span>
+              <span>© {new Date().getFullYear()}</span>
             </div>
           </footer>
         </ShopProvider>

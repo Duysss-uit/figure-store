@@ -4,13 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useShop } from "@/context/shop-context";
+import type { Category } from "@/lib/types";
 
-const links = [
-  { href: "/", label: "Trang chủ" },
-  { href: "/figures", label: "Figure" },
-];
+type Props = {
+  categories: Category[];
+};
 
-export function Navbar() {
+export function Navbar({ categories }: Props) {
   const pathname = usePathname();
   const { ready, user, itemCount } = useShop();
 
@@ -23,18 +23,30 @@ export function Navbar() {
         </Link>
 
         <nav className="nav-links" aria-label="Chính">
-          {links.map((link) => {
-            const active =
-              link.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(link.href);
+          <Link
+            href="/"
+            className={pathname === "/" ? "nav-link is-active" : "nav-link"}
+          >
+            Trang chủ
+          </Link>
+          <Link
+            href="/figures"
+            className={
+              pathname === "/figures" ? "nav-link is-active" : "nav-link"
+            }
+          >
+            Tất cả
+          </Link>
+          {categories.map((cat) => {
+            const href = `/figures/${cat.id}`;
+            const active = pathname === href || pathname.startsWith(`${href}/`);
             return (
               <Link
-                key={link.href}
-                href={link.href}
+                key={cat.id}
+                href={href}
                 className={active ? "nav-link is-active" : "nav-link"}
               >
-                {link.label}
+                {cat.name}
               </Link>
             );
           })}

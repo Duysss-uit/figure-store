@@ -48,7 +48,7 @@ function CheckoutForm() {
       return;
     }
     if (paymentMethod === "card" && (!cardNumber.trim() || !cardName.trim())) {
-      setError("Nhập đủ thông tin thẻ (demo frontend).");
+      setError("Nhập đủ thông tin thẻ.");
       return;
     }
     updateProfile({
@@ -64,10 +64,7 @@ function CheckoutForm() {
     return (
       <div className="panel form-stack">
         <h1 className="panel__title">Đặt hàng thành công</h1>
-        <p className="muted">
-          Đây là luồng thanh toán demo trên frontend. Đơn hàng không gửi lên
-          server.
-        </p>
+        <p className="muted">Cảm ơn bạn đã đặt hàng tại Figora.</p>
         <div className="btn-row">
           <Link href="/figures" className="btn btn--primary">
             Tiếp tục mua sắm

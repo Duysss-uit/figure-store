@@ -32,9 +32,7 @@ function LoginForm() {
     <div className="page" style={{ maxWidth: 480 }}>
       <form className="form-card form-stack" onSubmit={onSubmit}>
         <h1>Đăng nhập</h1>
-        <p className="muted">
-          Tài khoản lưu trên trình duyệt (localStorage) — không có backend.
-        </p>
+        <p className="muted">Đăng nhập để xem giỏ hàng và tài khoản của bạn.</p>
         <div className="field">
           <label htmlFor="email">Email</label>
           <input
