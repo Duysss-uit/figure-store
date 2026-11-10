@@ -158,7 +158,7 @@ function CheckoutForm() {
 
         {error ? <p className="form-error">{error}</p> : null}
 
-        <button type="submit" className="btn btn--gold" disabled={cart.length === 0}>
+        <button type="submit" className="btn btn--secondary" disabled={cart.length === 0}>
           Xác nhận đặt hàng · {formatVnd(total)}
         </button>
       </form>

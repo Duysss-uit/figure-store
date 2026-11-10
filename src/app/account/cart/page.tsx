@@ -82,7 +82,7 @@ export default function AccountCartPage() {
                 {formatVnd(total)}
               </p>
             </div>
-            <Link href="/checkout" className="btn btn--gold">
+            <Link href="/checkout" className="btn btn--secondary">
               Thanh toán
             </Link>
           </div>

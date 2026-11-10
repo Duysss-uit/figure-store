@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Manrope, Syne } from "next/font/google";
+import { Figtree, Outfit } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { ShopProvider } from "@/context/shop-context";
 import { getCategories } from "@/lib/products";
 import "./globals.css";
 
-const syne = Syne({
-  variable: "--font-syne",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  weight: ["500", "600", "700"],
 });
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -29,7 +29,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="vi"
-      className={`${syne.variable} ${manrope.variable} h-full antialiased`}
+      className={`${outfit.variable} ${figtree.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <ShopProvider>

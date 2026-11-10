@@ -78,7 +78,7 @@ export function ProductBrowser({
           <input
             id="product-search"
             type="search"
-            placeholder="Tên sản phẩm…"
+            placeholder="Tìm theo tên hoặc mô tả…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />

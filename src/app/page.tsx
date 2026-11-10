@@ -32,12 +32,12 @@ export default async function HomePage() {
         <div className="hero__content">
           <h1 className="hero__brand">Figora</h1>
           <p className="hero__lead">
-            Cửa hàng figure, Gunpla và đồ sưu tầm — chọn theo thể loại, thêm vào
-            giỏ và thanh toán.
+            Figure, Gunpla và đồ sưu tầm chọn lọc — duyệt theo thể loại, thêm
+            vào giỏ và thanh toán trong vài bước.
           </p>
           <div className="btn-row">
             <Link href="/figures" className="btn btn--primary">
-              Xem thể loại figure
+              Xem tất cả sản phẩm
             </Link>
             <Link href="/figures/gundam" className="btn btn--ghost">
               Gundam mới về
@@ -52,8 +52,8 @@ export default async function HomePage() {
             <p className="section__eyebrow">Thể loại</p>
             <h2 className="section__title">Chọn đúng tủ trưng bày</h2>
             <p className="section__desc">
-              Chọn thể loại trên thanh điều hướng hoặc ngay bên dưới để xem
-              đúng tủ trưng bày bạn cần.
+              Năm dòng sản phẩm chính — nhảy thẳng từ thanh điều hướng hoặc
+              chọn tại đây.
             </p>
           </div>
           <div className="category-grid">
@@ -86,7 +86,7 @@ export default async function HomePage() {
             <p className="section__eyebrow">Nổi bật</p>
             <h2 className="section__title">Hàng đang có trên kệ</h2>
             <p className="section__desc">
-              Một vài món đang được quan tâm — mở sản phẩm để thêm vào giỏ.
+              Một vài món được quan tâm — mở sản phẩm để thêm vào giỏ.
             </p>
           </div>
           <div className="product-grid">
