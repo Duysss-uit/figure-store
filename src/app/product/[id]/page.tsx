@@ -33,9 +33,13 @@ export default async function ProductPage({ params }: Props) {
           />
         </div>
         <div className="product-detail__body">
-          <p className="product-detail__cat">
-            <Link href={`/figures/${product.category}`}>{product.category}</Link>
-          </p>
+          <Link
+            href={`/figures/${product.category}`}
+            className="back-link"
+          >
+            <span aria-hidden>←</span> Quay lại
+          </Link>
+          <p className="product-detail__cat">{product.category}</p>
           <h1 className="product-detail__title">{product.name}</h1>
           <p className="product-detail__price">{formatVnd(product.price)}</p>
           <p className="product-detail__desc">{product.description}</p>
@@ -46,9 +50,6 @@ export default async function ProductPage({ params }: Props) {
               price={product.price}
               image={product.image}
             />
-            <Link href="/figures" className="btn btn--ghost">
-              Quay lại thể loại
-            </Link>
           </div>
         </div>
       </div>
